@@ -16,12 +16,17 @@ union byte_data {
 };
 struct nxr_data {
 	byte func;
-	byte errc;
+	bool errc; // true(error) if not equal to 0xf0
 	unsigned short int reg;
 	bool isfloat;
 	float float_data;
 	unsigned int int_data;
 	byte data_array[8];
+	bool fault; // true if problem during decode
 };
+
+nxr_data encode(nxr_data x);
+nxr_data decode(nxr_data x);
+void print_nxr_data(nxr_data x);
 
 #endif
