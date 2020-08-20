@@ -41,5 +41,13 @@
     <ClInclude Include="nxr_id.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ControlCAN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlCAN.dll">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
