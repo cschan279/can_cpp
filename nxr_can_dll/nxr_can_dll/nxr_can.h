@@ -4,7 +4,7 @@
 typedef unsigned char       BYTE;
 typedef unsigned int        UINT;
 typedef unsigned short		USHORT;
-#define LOCAL_CAN_ADDR      0xf0
+
 
 union shortbyte {
 	USHORT usi;
@@ -52,6 +52,14 @@ typedef struct _VCI_CAN_OBJ{
 
 void nxr_encode(P_NXR_ID *n_id, P_NXR_DATA *n_data);
 void nxr_decode(P_NXR_ID *n_id, P_NXR_DATA *n_data);
-void nxr_print_frame(P_NXR_ID *n_id, P_NXR_DATA *n_data);
+void nxr_print(P_NXR_ID *n_id, P_NXR_DATA *n_data);
+
+void nxr_id_encode(P_NXR_ID* n_id);
+void nxr_id_decode(P_NXR_ID* n_id);
+void nxr_id_print(P_NXR_ID* n_id);
+
+void nxr_data_encode(P_NXR_DATA* n_data);
+void nxr_data_decode(P_NXR_DATA* n_data);
+void nxr_data_print(P_NXR_DATA* n_data);
 
 #endif
