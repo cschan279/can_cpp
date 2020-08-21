@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "nxr_can.h"
 #include <iostream>
-using namespace std;
+//using namespace std;
 
 
 void nxr_encode(P_NXR_ID *n_id, P_NXR_DATA *n_data){
@@ -53,7 +53,6 @@ void nxr_data_encode(P_NXR_DATA *x) {
 	}
 	return;
 }
-
 
 void nxr_id_decode(P_NXR_ID* x) {
 	UINT id = (*x)->id;

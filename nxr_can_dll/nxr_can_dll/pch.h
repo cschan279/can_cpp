@@ -9,5 +9,5 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
-
+#include "nxr_can.h"
 #endif //PCH_H
