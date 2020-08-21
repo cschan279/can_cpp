@@ -92,6 +92,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ControlCAN.dll;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\User\source\repos\can_cpp\can_cpp\can_cpp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,9 +148,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bytefloat.h" />
+    <ClInclude Include="ControlCAN.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="nxr_data.h" />
     <ClInclude Include="nxr_id.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlCAN.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

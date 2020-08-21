@@ -1,3 +1,7 @@
-﻿  nxr_data.cpp
+﻿  bytefloat.cpp
+  main.cpp
+  nxr_data.cpp
 C:\Users\User\source\repos\can_cpp\can_cpp\can_cpp\nxr_data.cpp(42,13): warning C4553: '==': result of expression not used; did you intend '='?
+  nxr_id.cpp
+  Generating Code...
   can_cpp.vcxproj -> C:\Users\User\source\repos\can_cpp\can_cpp\Debug\can_cpp.exe
