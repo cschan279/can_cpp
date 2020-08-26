@@ -9,10 +9,11 @@ class P_NXR_ID(Structure):
                 ("fault",c_bool)]
 
 
-dll_file = cdll.LoadLibrary("./x64/Debug/nxr_can_dll.dll")
+dll_file = windll.LoadLibrary("./x64/Debug/nxr_can_dll.dll")
 #dll_file = cdll.LoadLibrary("./nxr_can_dll/nxr_can.dll")
 
 print(dir(dll_file))
 print(dll_file._FuncPtr)
+print(dll_file.nxr_data_decode)
 #dll_file = cdll.LoadLibrary("./nxr_can_dll/nxr_can.dll")
 #print(dir(dll_file))
